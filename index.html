@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Pribadi</title>
+
+    <!-- My Own CSS -->
+    <link rel="stylesheet" href="css/app.css" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet" />
+
+    <!-- Font Awesome 5.15.4 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <header class="navbar-container">
+      <div class="logo">
+        <img src="img/logo-vynn.png" alt="Logo Vynn" />
+      </div>
+      <nav class="nav-list">
+        <ul>
+          <li><a href="#">Dashboard</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contacts">Contacts</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <article id="content" class="content">
+        <div class="content-description">
+          <h1 class="title">Vina Nur Fauziah</h1>
+          <p>
+            Undergraduate Informatics Engineering Student | Web Development
+            Enthusiast
+          </p>
+          <button>Hire Me</button>
+        </div>
+        <div class="content-image">
+          <img id="zoomImage" src="img/profil-vina.png" alt="Profil Vina" />
+        </div>
+      </article>
+
+      <article id="about" class="about">
+        <div class="content-about">
+          <h2 class="title">About Me</h2>
+          <p>
+            I am a 6th semester student majoring in Informatics Engineering. I
+            graduated from a Vocational High School majoring in Software
+            Engineering in Bandung City from 2018 to 2021. I have been
+            passionate about Web Programming since 2018.
+          </p>
+        </div>
+      </article>
+
+      <article id="services" class="services">
+        <div class="content-services">
+          <h2 class="title">Services</h2>
+          <div class="card-container">
+            <div class="card">
+              <div class="card-body">
+                <h3>UI/UX Designer</h3>
+                <p>
+                  Design and develop prototypes for cross-platform applications,
+                  which include Android and web platforms using figma software
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article id="projects" class="projects">
+        <div class="content-projects">
+          <h2 class="title">Projects</h2>
+          <div class="card-container">
+            <div class="card">
+              <div class="card-image">
+                <img src="img/stock-barang.png" alt="Landing Page Filmologi" />
+              </div>
+              <div class="card-body">
+                <h3>stock barang</h3>
+                <a href="https://github.com/vinaanurfauziah/stockbarang">Github</a>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-image">
+                <img src="img/filmologi.jpg" alt="Dashboard Stock Barang" />
+              </div>
+              <div class="card-body">
+                <h3>filmologi</h3>               
+                <a href="https://github.com/iqbalmaulanasidiq/filmologi">Github</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article id="contacts" class="contacts">
+        <div class="content-contacts">
+          <h2 class="title">Contacts</h2>
+          <div class="container">
+            <form>
+              <label>Email:</label><br />
+              <input type="email" name="email" required /><br />
+              <label>Message:</label><br />
+              <textarea name="message" required></textarea><br />
+              <button type="submit">Send</button>
+            </form>
+          </div>
+        </div>
+      </article>
+
+      <aside>
+        <div class="social-media">
+          <ul>
+            <li>
+              <button id="profileButton">
+                <i class="fas fa-user-circle"></i>
+              </button>
+            </li>
+          </ul>
+          <!-- Pop-up container -->
+          <div id="profilePopup" class="popup">
+            <div class="popup-content">
+              <span class="close" onclick="closePopup()">&times;</span>
+              <img src="img/profil-vina.png" alt="Foto Profil Anda" />
+              <h2>Profile</h2>
+              <p>Vina Nur Fauziah</p>
+              <p>Universitas Pasundan</p>
+              <ul>
+                <li>
+                  <a href="https://www.instagram.com/vinanurfzh"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/in/vinanurfauziahr/"
+                    ><i class="fab fa-linkedin-in"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://github.com/vinaanurfauziah/"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </main>
+    <footer>
+      <p>&copy; 2024, Vina Nur Fauziah</p>
+    </footer>
+    <script src="js/app.js"></script>
+  </body>
+</html>
